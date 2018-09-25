@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+	<meta name="description" content="Rainmeter allows you to display customizable skins on your desktop, from hardware usage meters to fully functional audio visualizers. You are only limited by your imagination and creativity.">
+	<meta itemprop="name" content="Rainmeter, desktop customization tool">
+	<meta itemprop="description" content="Rainmeter allows you to display customizable skins on your desktop, from hardware usage meters to fully functional audio visualizers. You are only limited by your imagination and creativity.">
+	<meta name="og:title" content="Rainmeter, desktop customization tool">
+	<meta name="og:description" content="Rainmeter allows you to display customizable skins on your desktop, from hardware usage meters to fully functional audio visualizers. You are only limited by your imagination and creativity.">
+	<meta name="og:image" content="https://www.rainmeter.net/img/media_image.png">
+	<meta name="og:url" content="https://www.rainmeter.net">
+	<meta name="og:site_name" content="Rainmeter">
+	<meta name="og:type" content="website">
+	<title>Rainmeter 4.3 Beta - Rainmeter, desktop customization tool</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Nunito:200,300,400,700">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous" />
+	<link rel="shortcut icon" href="/favicon.ico">
+</head>
+
+<body>
+
+	<!-- Lazyload images to reduce initial loading time -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lazyloadjs/3.2.2/lazyload.min.js" integrity="sha256-BYIGSlPqLS5NrndoMKMp7EpW8tbOfXbjiNkN3uATdH8=" crossorigin="anonymous"></script>
+	
+	<div id="hero" class="hero--flat">
+  <div id="navbar" class="container">
+	<nav class="navbar navbar-expand-lg navbar-dark">
+			<a class="navbar-brand" href="https://www.rainmeter.net"><img src="\img\logo_nav.png" alt=""></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+				<ul class="navbar-nav order-12">
+						<li class="nav-item "><a class="nav-link" href="../index.html">Home</a></li>
+						<li class="nav-item "><a class="nav-link" href="//docs.rainmeter.net/">Documentation</a></li>
+						<li class="nav-item "><a class="nav-link" href="../discover">Discover</a></li>
+						<li class="nav-item "><a class="nav-link" href="//forum.rainmeter.net">Community</a></li>
+					<div class="dropdown-divider"></div>
+				</ul>
+			</div>
+	</nav>
+</div>
+
+</div>
+<div id="content" class="container content">
+  <div class="post">
+  <div class="release-notes">
+	<div class="description">
+		<h1 class="text-center">Rainmeter 4.3</h1>
+		<hr>
+		<p>The following are the changes for the 4.3 beta version of Rainmeter. You can safely install the new 4.3 beta version right over top of your existing Rainmeter 4.2 or earlier installation, and nothing you have done will be lost or changed. There is never any need to uninstall earlier versions of Rainmeter to use the newest version.</p>
+	</div>
+	<div class="changelog">
+		<h2>Changes in Rainmeter Beta 4.3</h2>
+		<hr>
+		
+		<p><b>Direct2D and Hardware Acceleration</b>: Rainmeter 4.3 has changed entirely from using an older GDI+ graphics engine in Windows to the more modern and capable Direct2D (known as D2D for short). Not only does D2D offer additional capabilities we will be taking advantage of in the near future, but it also allows us to optionally support hardware acceleration. (known as HWA for short) This means that some of the processing, and the memory used, can be offloaded from the CPU to the GPU, and things will be rendered or "draw" significantly faster.</p>
+		
+		<p>As of the early 4.3 betas, hardware acceleration defaults to "off". This to help us to identify general issues that might come up with the conversion from GDI+ to D2D, and isolate any problems that are strictly related to hardware acceleration. Hardware acceleration can be turned "on" in the <a href="https://docs.rainmeter.net/manual-beta/user-interface/manage/#SettingsTab">Settings dialog</a>, and we recommend it. Future updates will change the default to "on" in Rainmeter.</p>
+		
+		<p><b>Hardware acceleration and Intel HD integrated graphics</b>: There is a known issue with certain Intel HD integrated graphics chips, often seen on laptop computers, and hardware acceleration. This is due to a bug in the drivers for these chips from Intel, and the problem can generally be solved by updating your system to the most recent version of the graphics drivers from Intel.</p>
+		
+		<p><b>Reporting problems with Direct2D</b>: For this beta, we would be very interested in anything you see that is "different" for you when using Rainmeter 4.3. Things that looked different in Rainmeter 4.2. The goal here is to first ensure that we fully protect <em>backwards compatibility</em> with existing skins in the change from GDI+ to D2D. Any skin you run in Rainmeter 4.2 should look and work exactly the same in Rainmeter 4.3. Please report these issue in this forum area: <a href="https://forum.rainmeter.net/viewforum.php?f=123">Rainmeter 4.3 Beta</a>.
+
+		<hr>
+		<p><b>Additional details on important changes during the beta cycle can be found at <a href="https://forum.rainmeter.net/viewforum.php?f=125">Change Announcements</a>.</b></p>
+		
+		<p class="revision"><b>September 24, 2018 - Revision 3250</b></p>
+		<ul>
+			<li><span class="badge badge-changed">Changed</span><b>Initial beta release with change from GDI+ to D2D and optional hardware acceleration.</b></li>
+		</ul>
+
+	</div>
+</div>
+
+  </div>
+</div>
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-6">Made with ❤ by the community.</div>
+      <div class="col-6 text-right text-md-right"></div>
+    </div>
+  </div>
+</footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js" integrity="sha256-wzoq0P7w2qLzRcJsF319y6G9Oilk3nU5CZ8tnY9TjFI=" crossorigin="anonymous"></script>
+  <script src="../js/main.js"></script>
+
+</body>
+</html>
